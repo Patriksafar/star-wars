@@ -5,5 +5,5 @@ export async function GET(req: Request, context: any) {
 
   const actor = actors.find((actor) => actor.id === id);
 
-  return new Response(JSON.stringify({ ...actor }));
+  return new Response(JSON.stringify(actor));
 }
