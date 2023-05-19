@@ -1,7 +1,6 @@
 export type Movie = {
   id: string;
   title: string;
-  poster: string;
   description: string;
   year: string;
   rating: number;
@@ -13,7 +12,6 @@ export type Movies = Movie[];
 export type Actor = {
   id: string;
   name: string;
-  photo: string;
   movies: Array<Record<"id", string>>;
 };
 
@@ -24,73 +22,61 @@ export const actors: Actors = [
   {
     id: "1",
     name: "Mark Hamill",
-    photo: "http://localhost:3000/static/actors/1.jpeg",
     movies: [{ id: "4" }, { id: "5" }, { id: "6" }],
   },
   {
     id: "2",
     name: "Harrison Ford",
-    photo: "http://localhost:3000/static/actors/2.jpeg",
     movies: [{ id: "4" }, { id: "5" }, { id: "6" }],
   },
   {
     id: "3",
     name: "Carrie Fisher",
-    photo: "http://localhost:3000/static/actors/3.png",
     movies: [{ id: "4" }, { id: "5" }, { id: "6" }],
   },
   {
     id: "4",
     name: "Natalie Portman",
-    photo: "http://localhost:3000/static/actors/4.jpeg",
     movies: [{ id: "1" }, { id: "2" }, { id: "3" }],
   },
   {
     id: "5",
     name: "Ewan McGregor",
-    photo: "http://localhost:3000/static/actors/5.jpg",
     movies: [{ id: "1" }, { id: "2" }, { id: "3" }],
   },
   {
     id: "6",
     name: "Hayden Christensen",
-    photo: "http://localhost:3000/static/actors/6.jpg",
     movies: [{ id: "1" }, { id: "2" }, { id: "3" }],
   },
   {
     id: "7",
     name: "Liam Neeson",
-    photo: "http://localhost:3000/static/actors/7.jpg",
     movies: [{ id: "1" }],
   },
   {
     id: "8",
     name: "Samuel L. Jackson",
-    photo: "http://localhost:3000/static/actors/8.jpg",
     movies: [{ id: "1" }, { id: "2" }, { id: "3" }],
   },
   {
     id: "9",
     name: "Daisy Ridley",
-    photo: "http://localhost:3000/static/actors/9.jpeg",
     movies: [{ id: "7" }, { id: "8" }, { id: "9" }],
   },
   {
     id: "10",
     name: "John Boyega",
-    photo: "http://localhost:3000/static/actors/10.jpg",
     movies: [{ id: "7" }, { id: "8" }, { id: "9" }],
   },
   {
     id: "11",
     name: "Oscar Isaac",
-    photo: "http://localhost:3000/static/actors/11.jpeg",
     movies: [{ id: "7" }, { id: "8" }, { id: "9" }],
   },
   {
     id: "12",
     name: "Adam Driver",
-    photo: "http://localhost:3000/static/actors/12.jpeg",
     movies: [{ id: "7" }, { id: "8" }, { id: "9" }],
   },
 ];
@@ -101,7 +87,6 @@ export let movies: Movies = [
   {
     id: "1",
     title: "The Phantom Menace",
-    poster: "http://localhost:3000/static/movies/episode-1.jpeg",
     year: "1999",
     rating: 2.5,
     actors: [{ id: "7" }, { id: "5" }, { id: "6" }, { id: "4" }],
@@ -111,7 +96,6 @@ export let movies: Movies = [
   {
     id: "2",
     title: "Attack of the Clones",
-    poster: "http://localhost:3000/static/movies/episode-2.jpeg",
     year: "2002",
     rating: 2.5,
     actors: [{ id: "5" }, { id: "6" }, { id: "4" }, { id: "8" }],
@@ -121,7 +105,6 @@ export let movies: Movies = [
   {
     id: "3",
     title: "Revenge of the Sith",
-    poster: "http://localhost:3000/static/movies/episode-3.jpeg",
     year: "2005",
     rating: 3,
     actors: [{ id: "5" }, { id: "6" }, { id: "4" }, { id: "8" }],
@@ -131,7 +114,6 @@ export let movies: Movies = [
   {
     id: "4",
     title: "A New Hope",
-    poster: "http://localhost:3000/static/movies/episode-4.jpeg",
     year: "1977",
     rating: 4,
     actors: [{ id: "1" }, { id: "2" }, { id: "3" }],
@@ -141,7 +123,6 @@ export let movies: Movies = [
   {
     id: "5",
     title: "The Empire Strikes Back",
-    poster: "http://localhost:3000/static/movies/episode-5.jpg",
     year: "1980",
     rating: 4.5,
     actors: [{ id: "1" }, { id: "2" }, { id: "3" }],
@@ -151,7 +132,6 @@ export let movies: Movies = [
   {
     id: "6",
     title: "Return of the Jedi",
-    poster: "http://localhost:3000/static/movies/episode-6.jpg",
     year: "1983",
     rating: 4,
     actors: [{ id: "1" }, { id: "2" }, { id: "3" }],
@@ -161,7 +141,6 @@ export let movies: Movies = [
   {
     id: "7",
     title: "The Force Awakens",
-    poster: "http://localhost:3000/static/movies/episode-7.jpeg",
     year: "2015",
     rating: 4,
     actors: [{ id: "9" }, { id: "10" }, { id: "11" }, { id: "12" }],
@@ -171,7 +150,6 @@ export let movies: Movies = [
   {
     id: "8",
     title: "The Last Jedi",
-    poster: "http://localhost:3000/static/movies/episode-8.jpeg",
     year: "2017",
     rating: 3.5,
     actors: [{ id: "9" }, { id: "10" }, { id: "11" }, { id: "12" }],
@@ -181,7 +159,6 @@ export let movies: Movies = [
   {
     id: "9",
     title: "The Rise of Skywalker",
-    poster: "http://localhost:3000/static/movies/episode-9.jpeg",
     year: "2019",
     rating: 3,
     actors: [{ id: "9" }, { id: "10" }, { id: "11" }, { id: "12" }],
