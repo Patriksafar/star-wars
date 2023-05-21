@@ -15,7 +15,3 @@ export const main = css`
     grid-column: 2;
   }
 `;
-
-export const section = css`
-  max-width: 920px;
-`;

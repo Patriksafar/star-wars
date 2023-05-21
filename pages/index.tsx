@@ -1,4 +1,4 @@
-import { Button, MainLayout } from "../components";
+import { FilmList, Layout } from "../components";
 
 export const Home = () => {
   return (
@@ -6,9 +6,9 @@ export const Home = () => {
       <header>
         <h1>Star Wars Movies</h1>
       </header>
-      <MainLayout>
-        <Button>Load more</Button>
-      </MainLayout>
+      <Layout>
+        <FilmList />
+      </Layout>
     </>
   );
 };
