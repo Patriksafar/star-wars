@@ -1,17 +1,15 @@
-import { Montserrat } from "next/font/google";
+import { FilmList, Layout, Header } from "../components";
 
-const monsterrat = Montserrat({ subsets: ["latin"] });
+import img from "../public/twistus.jpg";
 
 export const Home = () => {
   return (
-    <main
-      className={`flex min-h-screen flex-col items-center justify-between p-24 ${monsterrat.className}`}
-    >
-      <h1 className="text-4xl font-bold">Star Wars Movies</h1>
-      <div>
-        <div></div>
-      </div>
-    </main>
+    <>
+      <Header image={img} />
+      <Layout>
+        <FilmList />
+      </Layout>
+    </>
   );
 };
 
