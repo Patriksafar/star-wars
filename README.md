@@ -24,19 +24,20 @@ There is local API provided for getting movies and actors:
 
 ### Movies
 
-You can get list of all Star Wars movies by fetching data from `GET` http://localhost:3000/api/movies
+To retrieve a list of all Star Wars movies, you need to make a `GET` request to http://localhost:3000/api/movies.
 
-You can also provide movie's id to get info about single movie `GET` http://localhost:3000/api/movies/1
+To get information about a specific movie, you can provide the movie's ID as a parameter in the `GET` request to http://localhost:3000/api/movies/1. Replace 1 with the desired movie ID.
 
-For mutation data you need to make `POST` request to http://localhost:3000/api/movies/1 where you also pass the `id` as a param. You can change `description` and `title`.
+To update the `description` and `title` of a movie, you need to make a `POST` request to http://localhost:3000/api/movies/1, where `1` represents the movie ID you want to modify. Include the updated description and title as parameters in the request body.
 
-This is how single movie response looks like
+#### Single Movie Response:
+
+The single `movie` response provided is in JSON format and contains the following fields
 
 ```json
 {
   "id": "1",
   "title": "The Phantom Menace",
-  "poster": "http://localhost:3000/static/movies/episode-1.jpeg",
   "year": "1999",
   "rating": 2.5,
   "description": "Two Jedi escape a hostile blockade to find allies and come across a young boy who may bring balance to the Force, but the long dormant Sith resurface to claim their original glory."
@@ -54,23 +55,23 @@ This is how single movie response looks like
       "id": "4"
     }
   ],
-  "description": "Two Jedi escape a hostile blockade to find allies and come across a young boy who may bring balance to the Force, but the long dormant Sith resurface to claim their original glory."
 }
 ```
 
 ### Actors
 
-You can get list of all Star Wars actors by fetching data from http://localhost:3000/api/actors
+To retrieve a list of all Star Wars actors, you need to make a `GET` request to http://localhost:3000/api/actors.
 
-You can also provide actor's id to get info about single actor http://localhost:3000/api/actors/1
+To get information about a specific actor, you can provide the actor's ID as a parameter in the `GET` request to http://localhost:3000/api/actors/1. Replace 1 with the desired actor ID.
 
-This is how single actor response looks like
+#### Single Actor Response:
+
+The single `actor` response provided is in JSON format and contains the following fields
 
 ```json
 {
   "id": "1",
   "name": "Mark Hamill",
-  "photo": "http://localhost:3000/static/actors/1.jpeg",
   "movies": [
     {
       "id": "4"
