@@ -7,7 +7,7 @@ type Props = {
   id: number;
 };
 
-export const Article = ({ description, title, rating, id }) => {
+export const Article = ({ description, title, rating, id }: Props) => {
   const handleEdit = () => {
     console.log("edit", id);
   };

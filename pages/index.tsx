@@ -1,11 +1,11 @@
-import { FilmList, Layout } from "../components";
+import { FilmList, Layout, Header } from "../components";
+
+import img from "../public/twistus.jpg";
 
 export const Home = () => {
   return (
     <>
-      <header>
-        <h1>Star Wars Movies</h1>
-      </header>
+      <Header image={img} />
       <Layout>
         <FilmList />
       </Layout>

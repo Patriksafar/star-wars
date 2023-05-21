@@ -16,7 +16,7 @@ export const rating = css`
 
 export const title = css`
   color: #1a0826;
-  font-size: calc(1rem / 16 * 15);
+  font-size: clamp(calc(1rem / 16 * 15), 0.25rem + 1vw, calc(1rem / 16 * 18));
   margin: 6px 0 0 0;
   font-weight: 600;
 `;
@@ -25,13 +25,13 @@ export const description = css`
   color: #655368;
   margin: 8px 0 0 0;
   font-weight: 500;
-  font-size: calc(1rem / 16 * 14);
+  font-size: clamp(calc(1rem / 16 * 14), 0.25rem + 1vw, calc(1rem / 16 * 16));
 `;
 
 export const actors = css`
   color: #7e6f80;
   margin: 6px 0 0 0;
-  font-size: calc(1rem / 16 * 11);
+  font-size: clamp(calc(1rem / 16 * 11), 0.25rem + 1vw, calc(1rem / 16 * 14));
 `;
 
 export const edit = css`

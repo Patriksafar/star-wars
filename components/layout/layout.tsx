@@ -4,8 +4,13 @@ import * as styles from "./layout.styles";
 
 type Props = {
   children: ReactNode;
+  className?: string;
 };
 
-export const Layout = ({ children }: Props) => {
-  return <main css={styles.main}>{children}</main>;
+export const Layout = ({ children, className }: Props) => {
+  return (
+    <main css={styles.main} className={className}>
+      {children}
+    </main>
+  );
 };
