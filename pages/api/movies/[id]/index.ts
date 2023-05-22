@@ -9,9 +9,10 @@ export default function handler(
   const { id } = query;
 
   if (req.method === "POST") {
-    const body = req.body;
+    const body = JSON.parse(req.body);
     const movie = movies.find((movie) => movie.id === id);
 
+    console.log(body);
     if (movie && body) {
       const newDescription = body.description;
       const newTitle = body.title;
