@@ -1,5 +1,6 @@
 import { NextApiRequest, NextApiResponse } from "next";
-import { Actors, actors } from "../data";
+import { actors } from "../data";
+import type { Actors } from "../types";
 
 export default function handler(
   req: NextApiRequest,

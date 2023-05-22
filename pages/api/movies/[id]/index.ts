@@ -1,5 +1,6 @@
 import { NextApiRequest, NextApiResponse } from "next";
-import { Movie, movies } from "../../data";
+import { movies } from "../../data";
+import type { Movie } from "../../types";
 
 export default function handler(
   req: NextApiRequest,
@@ -12,7 +13,6 @@ export default function handler(
     const body = JSON.parse(req.body);
     const movie = movies.find((movie) => movie.id === id);
 
-    console.log(body);
     if (movie && body) {
       const newDescription = body.description;
       const newTitle = body.title;
