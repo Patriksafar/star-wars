@@ -2,6 +2,7 @@ import "normalize.css/normalize.css";
 
 import type { AppProps } from "next/app";
 import { Montserrat } from "next/font/google";
+import { RouterCheck } from "@/components/router-check/router-check";
 const monsterrat = Montserrat({ subsets: ["latin"] });
 
 export default function App({ Component, pageProps }: AppProps) {
@@ -20,7 +21,9 @@ export default function App({ Component, pageProps }: AppProps) {
           min-height: 100%;
         }
       `}</style>
-      <Component {...pageProps} />
+      <RouterCheck>
+        <Component {...pageProps} />
+      </RouterCheck>
     </>
   );
 }
